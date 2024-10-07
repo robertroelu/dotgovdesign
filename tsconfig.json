@@ -1,0 +1,13 @@
+{
+  "extends": "@finsweet/tsconfig",
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "./",
+    "paths": {
+      "$utils/*": ["src/utils/*"],
+      "$modal/*": ["src/modal/*"],
+      "$nest/*": ["src/nest/*"]
+    },
+    "types": ["@finsweet/ts-utils"]
+  }
+}

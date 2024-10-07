@@ -1,0 +1,68 @@
+{
+  "name": "@finsweet/developer-starter",
+  "version": "0.0.0",
+  "description": "Developer starter template for Finsweet projects.",
+  "homepage": "https://github.com/finsweet/developer-starter#readme",
+  "license": "ISC",
+  "keywords": [],
+  "author": {
+    "name": "Finsweet",
+    "url": "https://finsweet.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finsweet/developer-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/finsweet/developer-starter/issues"
+  },
+  "type": "module",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node ./bin/build.js",
+    "build": "cross-env NODE_ENV=production node ./bin/build.js",
+    "lint": "eslint --ignore-path .gitignore ./src && prettier --check ./src",
+    "lint:fix": "eslint --ignore-path .gitignore ./src --fix",
+    "check": "tsc --noEmit",
+    "format": "prettier --write ./src",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "release": "changeset publish",
+    "update": "pnpm update -i -L -r"
+  },
+  "devDependencies": {
+    "@changesets/changelog-git": "^0.1.14",
+    "@changesets/cli": "^2.27.1",
+    "@finsweet/eslint-config": "^2.0.6",
+    "@finsweet/tsconfig": "^1.3.3",
+    "@playwright/test": "^1.41.2",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.19.12",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@finsweet/attributes-linkblockedit": "^1.5.0",
+    "@finsweet/attributes-cmssort": "^1.13.3",
+    "@finsweet/attributes-cmsfilter": "^1.16.2",
+    "@finsweet/attributes-scrolldisable": "^1.6.2",
+    "@finsweet/attributes-cmsload": "^1.12.0",
+    "@finsweet/attributes-socialshare": "^1.3.1",
+    "@finsweet/ts-utils": "^0.40.0",
+    "gsap": "^3.12.5",
+    "swiper": "^11.0.5"
+  },
+  "engines": {
+    "pnpm": ">=8"
+  }
+}
