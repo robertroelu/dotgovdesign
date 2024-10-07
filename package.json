@@ -52,13 +52,14 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@finsweet/attributes-linkblockedit": "^1.5.0",
-    "@finsweet/attributes-cmssort": "^1.13.3",
     "@finsweet/attributes-cmsfilter": "^1.16.2",
-    "@finsweet/attributes-scrolldisable": "^1.6.2",
     "@finsweet/attributes-cmsload": "^1.12.0",
+    "@finsweet/attributes-cmssort": "^1.13.3",
+    "@finsweet/attributes-linkblockedit": "^1.5.0",
+    "@finsweet/attributes-scrolldisable": "^1.6.2",
     "@finsweet/attributes-socialshare": "^1.3.1",
     "@finsweet/ts-utils": "^0.40.0",
+    "focus-trap": "^7.6.0",
     "gsap": "^3.12.5",
     "swiper": "^11.0.5"
   },
